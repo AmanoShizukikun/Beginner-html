@@ -1,0 +1,165 @@
+<!DOCTYPE html> <!--告訴瀏覽器檔案類型是 html-->
+<html> <!--網頁最外層-->
+    <head> <!--網頁資訊-->
+        <!--告訴瀏覽器編碼方式是 UTF-8-->
+        <meta charset = "UTF-8" />
+        <!--告訴瀏覽器網頁描述-->
+        <meta name="description" content="天野靜樹的首個網站，單純拿來測試用" />
+        <!--告訴瀏覽器網站作者-->
+        <meta name="author" content="天野靜樹" />
+        <!--告訴瀏覽器網站關鍵字-->
+        <meta name="keywords" content="天野靜樹" />
+        <!--告訴瀏覽器網站視口 根據裝置調整畫面大小 進入網頁時初始的縮放比-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--網頁標題-->
+        <title>天野靜樹的網頁</title> 
+    </head> 
+    <body> <!--網頁內容-->
+
+        <!--1.基本標籤-->
+        <!--h1~h6代表標題(重要➔不重要)-->
+        <h1>天野靜樹首個html</h1>
+        <h2>這是我第一次寫html寫不好請見諒</h2>
+        <!--br代表換行因為不需要寫內容所以可以只寫成br/-->
+        <br/>
+        <!--p代表一般的文字段落，b代表粗體，i代表斜體-->
+        <p>聽說臭雞雞想學<b>JavaScript</b> 所以我就先搶先一步學了<i>哈哈</i></p>
+        <!--hr代表水平線和br一樣不需寫內容所以可簡化成hr/-->
+        <hr/>
+
+        <!--2.連結&圖片-->
+        <!--標籤的後面東西是屬性，href代表網址屬性-->
+        <!--可以連外網 網址-->
+        <a href ="https://github.com/AmanoShizukikun">這是我的github網址還請多多指教</a>
+        <!--可以連同資料夾的html 檔案-->
+        <a href ="page2.html">第二頁</a>
+        <!--可以連不同資料夾的html 子資料夾名稱/檔案-->
+        <a href ="dir/page3.html">第三頁</a>
+        <!--可以連圖片-->
+        <a href ="M1.png">圖片</a>
+        <!--如果要直接顯示外部圖片-->
+        <img src="https://i.ytimg.com/vi/ygPePpWeeu0/maxresdefault.jpg"/>
+        <!--如果要直接顯示內部圖片-->
+        <img src="M1.png"/>
+        <!--圖片大小也能調整 width(寬) height(高) 可以只調一邊會等比縮放-->
+        <img src="M1.png" width="1280" height="720"/>
+        <hr/>
+
+        <!--3.影片&嵌入YT-->
+        <!--影片需要controls屬性才能撥放不然也就只是張照片-->
+        <!--影片大小也能調整 width(寬) height(高)-->
+        <video src="ダーリンダンス_mixdown_1.mp4" controls>無法載入影片</video>
+        <!--YT的話 先上YT找影片然後按分享嵌入複製文字即可-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cX1_fnM5HRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr/>
+
+        <!--4.列表&表格-->
+        <!--ul ➔ ●列表-->
+        <ul>
+            <li>google</li>
+            <li>facebook</li>
+            <li>youtube</li>
+        </ul>
+        <!--ol ➔ 排列列表 預設為阿拉伯數字-->
+        <ol>
+            <li>google</li>
+            <li>facebook</li>
+            <li>youtube</li>
+        </ol>
+        <!--type="a(A)"" 是小(大)寫英文排列-->
+        <ol type="a">
+            <li>google</li>
+            <li>facebook</li>
+            <li>youtube</li>
+        </ol>
+        <!--type="i(I)" 是小(大)寫羅馬符號排列-->
+        <ol type="I">
+            <li>google</li>
+            <li>facebook</li>
+            <li>youtube</li>
+        </ol>
+        <!--table 代表創造表格-->
+        <!--表格大小也能調整 width(寬) height(高)-->
+        <table width="300">
+            <!--tr代表行-->
+            <tr>
+                <!--td代表列-->
+                <td>名子</td>
+                <td>興趣</td>
+                <td>性別</td>
+            </tr>
+            <tr>
+                <td>靜月</td>
+                <td>唱歌</td>
+                <td>女性</td>
+            </tr>
+            <tr>
+                <td>靜樹</td>
+                <td>拍片</td>
+                <td>男性</td>
+            </tr>
+        </table>
+        </hr>
+
+        <!--5.容器 div & span-->
+        <!--div容器是用來美化排版及簡化程式，本身不影響程式-->
+        <!-- style="color:顏色" 是CSS程式碼-->
+        <div style="color:red;">
+            <ol type="i">
+                <li>google</li>
+                <li>facebook</li>
+                <li>youtube</li>
+        </div>
+        <hr>
+        <!--在說明 div & span的差異前要先知道html有兩種主要顯示方式-->
+        <!--第1種 寬度多少佔的空間就多少-->
+        <a href="#">寬度多少</a>
+        <a href="#">佔的空間就多少</a>
+        <span>我是span</span>
+        <span>我是span</span>
+        <hr>
+        <!--第2種 不管寬度多少都佔一整行-->
+        <p>不管寬度多少</p>
+        <p>都佔一整行</p>
+        <div>我是div</div>
+        <div>我是div</div>
+        <hr>
+
+        <!--6.輸入標籤-->
+        <!--輸入標籤input 需要屬性type來決定輸入內容-->
+        <!--輸入文字type="text"-->
+        <input type="text" />
+        <br/>
+        <br/>
+        <!--輸入文字並將文字變為●-->
+        <input type="password" />
+        <br/>
+        <br/>
+        <!--再輸入東西前提示placeholder-->
+        <input type="text" placeholder="提示"/>
+        <br/>
+        <br/>
+        <!--常用input type屬性-->
+        <!--輸入日期-->
+        <input type="date" />
+        <br/>
+        <br/>
+        <!--輸入範圍(拉桿)-->
+        <input type="range" />
+        <br/>
+        <br/>
+        <!--輸入檔案-->
+        <input type="file" />
+        <br/>
+        <br/>
+        <!--輸入確認框-->
+        <input type="checkbox" />
+        <br/>
+        <br/>
+        <!--輸入很多文字textarea-->
+        <textarea></textarea>
+        <br/>
+        <br/>
+        <textarea>你好</textarea>
+    </body> 
+</html> 
